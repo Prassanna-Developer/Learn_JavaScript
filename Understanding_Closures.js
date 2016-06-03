@@ -10,6 +10,8 @@ function outer(){
   var b = 200;
   
  var inner =  function(){
+   a++;
+   b++;
     console.log("Outer >> " + a);
     console.log("Inner >> " + b);
   }
@@ -22,4 +24,11 @@ var innerFn = outer();
 
 
 innerFn();
+
+
+
+var innerFn2 = outer();
+
+
+innerFn2();
 
